@@ -1,6 +1,8 @@
 def criar_personagem():
+
     print(" CRIAÇÃO DE PERSONAGEM ")
     print()
+
 
     nome  = input("NOME  : ")
     raca  = input("RAÇA  : ")
@@ -8,10 +10,11 @@ def criar_personagem():
     level = input("LEVEL : ")
 
     print()
-    print(f"  NOME  : {nome}")
-    print(f"  RAÇA  : {raca}")
-    print(f"  IDADE : {idade}")
-    print(f"  LEVEL : {level}")
+
+
+    dic = {'nome': nome, 'raca': raca, 'idade': idade, 'level': level}
+    for k, v in dic.items():
+        print(f"{k}: {v}")
 
 
 criar_personagem()
